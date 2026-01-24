@@ -2,6 +2,14 @@
 
 A performance comparison study for migrating large Swing-based GIS applications to JavaFX using SwingNode.
 
+## JavaFX - Swing and SwingNode
+
+[![Java](https://img.shields.io/badge/Java-21-blue.svg)](https://openjdk.org)
+[![JavaFX](https://img.shields.io/badge/JavaFX-21-green.svg)](https://openjfx.io)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.1.20-purple.svg)](https://kotlinlang.org)
+[![Maven](https://img.shields.io/badge/Maven-3.9+-orange.svg)](https://maven.apache.org)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 ## Overview
 
 This project benchmarks three different approaches for rendering complex graphics operations:
