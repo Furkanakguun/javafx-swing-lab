@@ -2,13 +2,13 @@ package org.example;
 
 import org.example.common.DrawMode;
 import org.example.monitor.SwingPerformanceMonitor;
+import org.example.monitor.SwingRefreshRateMonitor;
 import org.example.viewer.MapViewerPanel;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.Timer;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 
@@ -22,9 +22,9 @@ public class SwingBenchmarkFrame extends JFrame {
         SwingPerformanceMonitor monitor = new SwingPerformanceMonitor();
         mapViewer.setPerformanceMonitor(monitor);
         
-        JLabel statusLabel = new JLabel("FPS: 0 | CPU: N/A | Memory: 0/0 MB");
-        Timer timer = new Timer(100, e -> statusLabel.setText(monitor.getMetrics().toString()));
-        timer.start();
+        JLabel statusLabel = new JLabel("Refresh: 0.0 fps | CPU: N/A | Memory: 0/0 MB");
+        SwingRefreshRateMonitor refreshMonitor = new SwingRefreshRateMonitor(monitor, statusLabel);
+        refreshMonitor.start();
         
         setLayout(new BorderLayout());
         add(mapViewer, BorderLayout.CENTER);
