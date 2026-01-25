@@ -3,7 +3,7 @@ package org.example.common;
 public class GISTestConfig {
     
     // Shape and layer configuration
-    public static final int SHAPES_PER_LAYER = 2000;
+    public static final int SHAPES_PER_LAYER = 4000;
     public static final int LAYER_COUNT = 5;
     public static final int TOTAL_SHAPES = SHAPES_PER_LAYER * LAYER_COUNT;
     
@@ -28,7 +28,7 @@ public class GISTestConfig {
     public static final double INITIAL_SCALE = 0.3;
     public static final double MIN_SCALE = 0.05;
     public static final double MAX_SCALE = 5.0;
-    public static final double ZOOM_FACTOR = 1.1;
+    public static final double ZOOM_FACTOR = 0.5;
     
     private GISTestConfig() {
         // Utility class
