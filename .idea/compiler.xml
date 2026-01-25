@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="javaswing-lab" />
         <module name="javafx-lab" />
+        <module name="swingnode-lab" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
