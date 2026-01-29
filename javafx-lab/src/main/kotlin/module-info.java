@@ -1,6 +1,8 @@
 module org.example.javafxlab {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.management;
+    requires jdk.management;
     requires kotlin.stdlib;
 
 

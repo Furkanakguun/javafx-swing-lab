@@ -3,8 +3,8 @@ package org.example.common;
 public class GISTestConfig {
     
     // Shape and layer configuration
-    public static final int SHAPES_PER_LAYER = 4000;
-    public static final int LAYER_COUNT = 8;
+    public static final int SHAPES_PER_LAYER = 2000;
+    public static final int LAYER_COUNT = 5;
     public static final int TOTAL_SHAPES = SHAPES_PER_LAYER * LAYER_COUNT;
     
     // Canvas dimensions
